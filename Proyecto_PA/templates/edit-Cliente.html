@@ -1,0 +1,13 @@
+{% extends 'layout.html'%}
+
+{% block body %}
+
+<form action="/update_Cliente/{{cliente.0}}" method='POST'>
+    <input type="text" name="nombres" placeholder="Nombres" value="{{cliente.1}}">
+    <input type="text" name="apellidos" placeholder="Apellidos" value="{{cliente.2}}">
+    <input type="text" name="direccion" placeholder="Direccion" value="{{cliente.3}}">
+    <button type="Submit">
+        Guardar
+    </buttom>
+</form>
+{% endblock %}
